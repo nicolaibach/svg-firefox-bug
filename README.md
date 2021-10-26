@@ -1,0 +1,1 @@
+# svg-firefox-bug
