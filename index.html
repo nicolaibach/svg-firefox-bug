@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SVG Circle Bug in Firefox</title>
+	<link rel="stylesheet" href="the-new-reset.css">
+	<style>
+		table,
+		td {
+			border: 1px solid;
+		}
+
+		table {
+			margin: 2em;
+		}
+
+		td {
+			padding: 2em;
+		}
+	</style>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td></td>
+			<td>activity</td>
+			<td>circle</td>
+		</tr>
+		<tr>
+			<td>svg sprite</td>
+			<td>
+				<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round">
+					<use href="feather.svg#activity" />
+				</svg>
+			</td>
+			<td>
+				<svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					stroke-linejoin="round">
+					<use href="feather.svg#circle" />
+				</svg>
+			</td>
+		</tr>
+		<tr>
+			<td>img</td>
+			<td>
+				<img src="activity.svg" alt="">
+			</td>
+			<td>
+				<img src="circle.svg" alt="">
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
